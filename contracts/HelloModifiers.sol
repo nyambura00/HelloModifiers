@@ -2,9 +2,9 @@
 // compiler version must be greater than or equal to 0.8.17 and less than 0.9.0
 pragma solidity ^0.8.17;
 
-contract HelloWorld {
+contract Admin {
     string public greet = "Hello World!";
-    address admin;
+    address private admin;
 
     constructor(){
         admin = msg.sender;
